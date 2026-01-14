@@ -8,10 +8,15 @@ This repository contains the reproducible code for the **Two-Step Mendelian Rand
 The study aims to establish a causal biological framework linking social adversity to oral carcinogenesis. Specifically, we investigate whether genetic liability to social disadvantage accelerates biological aging (PhenoAge/Hannum Age), thereby increasing the risk of Oral Squamous Cell Carcinoma (OSCC).
 
 ### Repository Contents
-* **`01_analysis_pipeline.R`**: The main R script performing the two-step MR analysis:
-    1.  **Step 1:** Education (Social Proxy) $\to$ Epigenetic Clocks.
-    2.  **Step 2:** Epigenetic Clocks $\to$ Oral Cancer.
-    3.  **Validation:** Education $\to$ Smoking Behavior.
+This analysis is divided into two main pipelines:
+
+* **`01_analysis_pipeline.R`**: The main R script performing the biological Two-Step MR analysis:
+    1.  **Step 1:** Education (Social Proxy) $\to$ Epigenetic Clocks (PhenoAge/Hannum).
+    2.  **Step 2:** Epigenetic Clocks $\to$ Oral Cancer Risk.
+
+* **`02_behavioral_validation.R`**: The validation script for the behavioral pathway:
+    * **Validation:** Education $\to$ Smoking Intensity (Cigarettes per Day).
+    * *Purpose:* To confirm that the genetic instruments for education accurately replicate known behavioral patterns in this population context.
 
 ### Requirements
 The analysis runs in R and requires the following packages:
@@ -26,4 +31,4 @@ The analysis runs in R and requires the following packages:
 
 ### Contact
 For questions regarding the methodology or preliminary data:
- Irma Valdebenito
+* **Principal Investigator:** Irma Valdebenito
